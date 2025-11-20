@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : Print Greeting
-        run : echo "This is my first job start"
+        run : |
+              echo "This is my first job start"
+              pwd
       - name : Say Good Bye
-        run : echo "This is my first job end"
+        run : |
+              echo "This is my first job end"
+              echo "end"
